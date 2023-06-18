@@ -5,34 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>calculadora con javascript</title>
 </head>
 <body>
-    <title>hola mundo</title>
- <div>
-    <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>0</button></td>
-        <td><button>/</button></td>
-        <td><button>*</button></td>
-        <td><button>-</button></td>
-        <td><button>+</button></td>
-        <td><button>.</button></td>
-        <td><button>=</button></td>
-        <td><button>%</button></td>
-        <td><button>(</button></td>
-        <td><button>)</button></td>
-        <td><button>𝝿</button></td>
-    </tr>
+<div>
+    <h1>calculadora</h1>
 </div>
+<body onload="init();">
+   <table id="numeros">
+       <tr id="resultado">
+        <td colspan="12"><span></span></td>
+       </tr>
+       <tr>
+           <td><button id="uno">1</button></td>
+           <td><button id="dos">2</button></td>
+           <td><button id="tres">3</button></td>
+           <td><button id="cuatro">4</button></td>
+           <td><button id="cinco">5</button></td>
+           <td><button id="seis">6</button></td>
+           <td><button id="siete">7</button></td>
+           <td><button id="ocho">8</button></td>
+           <td><button id="nueve">9</button></td>
+           <td><button id="cero">0</button></td>
+       </tr>
+       <tr>
+           <td><button id="division">/</button></td>
+           <td><button id="multiplicacion">*</button></td>
+           <td><button id="resta">-</button></td>
+           <td><button id="suma">+</button></td>
+           <td><button id="punto">.</button></td>
+           <td><button id="igual">=</button></td>
+           <td><button id="porcentaje">%</button></td>
+           <td><button id="parentesisi">(</button></td>
+           <td><button id="parentesisd">)</button></td>
+           <td><button id="pi">𝝿</button></td>
+       </tr>
+       <tr>
+           <td><button id="reset">c</button></td>
+       </tr>
+
+   </table>
+
+   <script src="index.js"></script>
 
 </body>
 </html>
