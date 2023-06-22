@@ -2,6 +2,7 @@ var operandoa;
 var operandob;
 var operacion;
 
+
 function init(){
     var uno = document.getElementById('uno');
     var dos = document.getElementById('dos');
@@ -27,6 +28,7 @@ function init(){
     var multiplicacion = document.getElementById('multiplicacion');
     
 }
+
 
 uno.onclick = function(e){
     resultado.textContent = resultado.textContent  + "1";
@@ -98,7 +100,7 @@ division.onclick = function(e){
 }
 porcentaje.onclick = function(e){
     operandoa = resultado.textContent;
-    operacion = "%";
+    operacion = "%"
     limpiar();
 }
 igual.onclick = function(e){
@@ -130,7 +132,7 @@ function resolver(){
         res = parseFloat(operandoa) / parseFloat(operandob);
         break;
       case "%".
-        res = parseFloat(operandoa) % parseFloat(aperandob):
+        res = parseFloat(operandoa) * parseFloat(operandob) /100:
         break;
     }
     resetear();
